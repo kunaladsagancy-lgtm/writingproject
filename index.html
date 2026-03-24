@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work From Home</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    color: red;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+/* 🔥 LOGO STYLE */
+.logo img {
+    width: 160px;
+    margin: 20px 0;
+}
+
+.sub-text {
+    font-size: 20px;
+    color: #00a8a8;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 18px 35px;
+    background: linear-gradient(45deg, #ff0000, #ff7300);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.section {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.green { color: green; }
+.red { color: crimson; }
+.black { color: black; }
+
+.timer {
+    margin-top: 20px;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>WORK FROM HOME 🏠</h1>
+
+<!-- 🔥 LOGO ADDED -->
+<div class="logo">
+    <img src="https://i.ibb.co/8XzR8vH/logo.png" alt="logo">
+</div>
+
+<div class="sub-text">
+    STUDENTS 📚 पढ़ाई के साथ EXTRA INCOME
+</div>
+
+<a href="https://t.me/+XHlfz1zCJoYwODE9" class="button">
+    👉 JOIN TELEGRAM & APPLY NOW
+</a>
+
+<div class="section black">
+    HOUSEWIFE 🏡 खाली समय का सही इस्तेमाल
+</div>
+
+<div class="section red">
+    JOB SEEKERS 🛍️ के नए SOURCE
+</div>
+
+<div class="section green">
+    आसानी से समझ आने वाली GUIDANCE
+</div>
+
+<div class="timer" id="timer">
+    ⏳ Offer Ending Soon...
+</div>
+
+</div>
+
+<script>
+let time = 600;
+
+setInterval(() => {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+    document.getElementById("timer").innerHTML =
+        "⏳ Hurry! " + minutes + "m " + seconds + "s left";
+    time--;
+}, 1000);
+</script>
+
+</body>
+</html>
